@@ -20,6 +20,10 @@ export function getUsersCollection() {
   return typedCollection<UserProfile>('users')
 }
 
+export function getNotesCollection() {
+  return typedCollection<Note>('notes')
+}
+
 export function userDoc(uid: string) {
   return doc(getUsersCollection(), uid)
 }
