@@ -1,5 +1,7 @@
 # Garage Boilerplate
 
+> This introducesa a new feature, a form is being intergrated into this website. 
+
 > Streamlined Next.js + Firebase monorepo for student capstone projects — batteries included, beginner friendly, free-tier only.
 
 **New here? Read the [step-by-step guide](docs/GUIDE.md)** — it walks you from clone to shipping your first feature. The system diagrams are in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
