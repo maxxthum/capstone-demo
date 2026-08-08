@@ -1,4 +1,8 @@
-# Garage Boilerplate
+# RMIT Garage Boilerplate
+
+*this is part of a capstone project, trial mock sprint* 
+
+
 
 > Streamlined Next.js + Firebase monorepo for student capstone projects — batteries included, beginner friendly, free-tier only.
 
