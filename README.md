@@ -1,6 +1,7 @@
 # Garage Boilerplate
 
-> This introducesa a new feature, a form is being intergrated into this website. 
+> This introducesa a new feature, a form is being intergrated into this website.
+> As of 9 August 2026, this will be merged into the main branch as work is completed. 
 
 > Streamlined Next.js + Firebase monorepo for student capstone projects — batteries included, beginner friendly, free-tier only.
 
