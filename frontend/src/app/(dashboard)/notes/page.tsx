@@ -2,12 +2,7 @@ import type { Metadata } from 'next'
 import { requireAuth } from '@/actions/auth.actions'
 import { PageHeader } from '@/components/layout/PageHeader'
 import { CreateNoteForm } from '@/features/notes/components/CreateNoteForm'
-// Temporary local fallback for NotesList to resolve missing module error
-const NotesList = () => (
-  <div className="rounded border border-dashed border-neutral-200 p-4 text-sm text-neutral-600">
-    No notes yet.
-  </div>
-)
+import { NotesList } from '@/features/notes/components/NoteList'
 
 export const metadata: Metadata = { title: 'Notes' }
 

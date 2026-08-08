@@ -1,5 +1,6 @@
 'use client'
 
+import { useMemo } from 'react'
 import { where } from 'firebase/firestore'
 import { useCollection } from '@/hooks/useFirestore'
 import { useAuth } from '@/hooks/useAuth'
@@ -9,10 +10,14 @@ import { EmptyState } from '@/components/shared/EmptyState'
 
 export function NotesList() {
   const { user } = useAuth()
-  const { data: notes, loading } = useCollection(
-    getNotesCollection(),
-    where('uid', '==', user?.uid ?? '')
-  )
+  const uid = user?.uid ?? ''
+
+  // Memoize references so the subscription doesn't re-create on every render.
+  // The where constraint changes only when the signed-in user's uid changes.
+  const collectionRef = useMemo(() => getNotesCollection(), [])
+  const ownerConstraint = useMemo(() => where('uid', '==', uid), [uid])
+
+  const { data: notes, loading } = useCollection(collectionRef, ownerConstraint)
 
   if (loading) return <LoadingSpinner />
   if (notes.length === 0) return <EmptyState title="No notes yet" />
