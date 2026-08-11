@@ -4,6 +4,9 @@
 
 
 
+> This introducesa a new feature, a form is being intergrated into this website.
+> As of 9 August 2026, this will be merged into the main branch as work is completed. 
+
 > Streamlined Next.js + Firebase monorepo for student capstone projects — batteries included, beginner friendly, free-tier only.
 
 **New here? Read the [step-by-step guide](docs/GUIDE.md)** — it walks you from clone to shipping your first feature. The system diagrams are in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
